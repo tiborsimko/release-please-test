@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/tiborsimko/release-please-test/compare/v0.1.1...0.1.2) (2023-12-21)
+
+
+### Bug fixes
+
+* **api:** 1542 maint fix ([939548e](https://github.com/tiborsimko/release-please-test/commit/939548ec54f544df579642a82321f9a90198a745))
+* **maint:** 1530 ([#9](https://github.com/tiborsimko/release-please-test/issues/9)) ([686c19d](https://github.com/tiborsimko/release-please-test/commit/686c19d72f95028d2691deb3c80a66030d275d6a))
+
 ## [0.1.1](https://github.com/tiborsimko/release-please-test/compare/v0.1.0...v0.1.1) (2023-12-21)
 
 
