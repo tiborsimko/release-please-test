@@ -1,0 +1,35 @@
+# This file is part of REANA.
+# Copyright (C) 2020, 2021, 2022, 2023 CERN.
+#
+# REANA is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  lint-commitlint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      - name: Install commitlint
+        run: |
+          npm install conventional-changelog-conventionalcommits
+          npm install commitlint@latest
+
+      - name: Check commit message compliance of the recently pushed commit
+        if: github.event_name == 'push'
+        run: npx commitlint --from HEAD~1 --to HEAD --verbose
+
+      - name: Check commit message compliance of the pull request
+        if: github.event_name == 'pull_request'
+        run: npx commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose
+

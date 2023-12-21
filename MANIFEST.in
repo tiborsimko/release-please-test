@@ -1,0 +1,3 @@
+include *.md
+include *.yaml
+recursive-include release_please_test *.py
