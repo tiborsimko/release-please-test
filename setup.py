@@ -15,3 +15,4 @@ setup(
 # Thu 21 Dec 10:06:14 CET 2023 * master
 # Thu 21 Dec 10:13:15 CET 2023 * master
 # Thu 21 Dec 10:33:22 CET 2023 new-feature
+# Thu 21 Dec 10:38:58 CET 2023 fix
