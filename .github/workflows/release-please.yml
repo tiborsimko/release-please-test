@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - maint-0.9
+      - maint-0.1
       - master
 
 permissions:
