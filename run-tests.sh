@@ -20,7 +20,7 @@ check_commitlint () {
             found=1
         fi
     done < <(git log "$from..$to" --format="%s")
-    if [ $found != "0" ]; then
+    if [ $found -gt 0 ]; then
         exit 1
     fi
 }
