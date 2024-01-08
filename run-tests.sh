@@ -13,7 +13,7 @@ check_commitlint () {
     npx commitlint --from="$from" --to="$to" --verbose
     found=0
     while IFS= read -r line; do
-        if echo "$line" | grep -qP "\(\#[0-9]+\)$"; then
+        if echo "$line" | grep -qP "\(\#[0-9]+\)\"?$"; then
             echo "✔   PR number present in $line"
         else
             echo "✖   PR number missing in $line"
