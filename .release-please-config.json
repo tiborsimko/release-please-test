@@ -7,11 +7,11 @@
   "packages": {
     ".": {
       "changelog-sections": [
+        { "type": "build", "section": "Build", "hidden": false },
         { "type": "feat", "section": "Features", "hidden": false  },
         { "type": "fix", "section": "Bug fixes", "hidden": false },
         { "type": "perf", "section": "Performance improvements", "hidden": false },
         { "type": "refactor", "section": "Code refactoring", "hidden": false },
-        { "type": "build", "section": "Build", "hidden": false },
         { "type": "style", "section": "Code style", "hidden": false },
         { "type": "test", "section": "Test suite", "hidden": false },
         { "type": "ci", "section": "Continuous integration", "hidden": false },
