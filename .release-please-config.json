@@ -1,10 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "include-v-in-tag": false,
-  "pull-request-footer": " ",
-  "pull-request-header": " ",
-  "release-type": "python",
-  "versioning-strategy": "always-bump-patch",
   "packages": {
     ".": {
       "changelog-sections": [
@@ -18,7 +14,11 @@
         { "type": "ci", "section": "Continuous integration", "hidden": false },
         { "type": "docs", "section": "Documentation", "hidden": false },
         { "type": "chore", "section": "Chores", "hidden": true }
-      ]
+      ],
+      "versioning": "always-bump-patch"
     }
-  }
+  },
+  "pull-request-footer": " ",
+  "pull-request-header": " ",
+  "release-type": "python"
 }
