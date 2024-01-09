@@ -15,7 +15,7 @@
         { "type": "docs", "section": "Documentation", "hidden": false },
         { "type": "chore", "section": "Chores", "hidden": true }
       ],
-      "versioning-strategy": "always-bump-patch"
+      "versioning": "always-bump-patch"
     }
   },
   "pull-request-footer": " ",
